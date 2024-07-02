@@ -125,19 +125,7 @@ function videoCursor() {
     })
 }
 
-// function links() {
-//     let link = document.querySelectorAll(".link-box");
-
-//     link.addEventListener('mouseenter', function () {
-//         gsap.to(link,{
-
-//         })
-//     })
-// }
-
-// links()
 videoCursor()
-// card3d()
 magnet()
 locomotive()
 textAnimation()

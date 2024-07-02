@@ -662,3 +662,88 @@ background-color: #40af4e;
 .link-box6 span:hover{
     rotate: 300deg;
 }
+
+
+@media (max-width:600px) {
+    #loader{
+        flex-direction: column;
+        /* display: none; */
+    }
+    .page1{
+        min-height: 35vh;
+    }
+    nav{
+        padding:0 9vw;
+    }
+    .nav-part1{
+
+        width: 10vw;
+    }
+    .nav-part2{
+        display: none;
+    }
+    .nav-part1 .icon{
+        font-size: 4.5vw;
+    }
+    .nav-part1 img{
+        width: 14vw;
+    }
+    .search i{
+        font-size: 4vw;
+    }
+    .search input{
+        width: 12vw;
+        font-size: 3vw;
+        height: 4vw;
+    }
+    .page2{
+        min-height: 40vh;
+        margin-top: 0vw;
+    }
+    .content-2{
+        height: 40vh;
+    }
+    .btn{
+        width: 19vw;
+    height: 6vw;
+    }
+    .page3{
+        height: 40vw;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .card{
+        height: 80vw;
+        padding-top: 2vw;
+    }
+    .card img{
+        width: 70vw;
+        height: 60vw;
+    }
+    .card p{
+        font-size: 4vw;
+        width: 45vw;
+    }
+        .card a{
+            width: 50vw;
+            margin-top: 7vw;
+        }
+        .page5{
+            min-height: 50vh;
+        }
+        .block img{
+            height: 50vh;
+        }
+        .container{
+            height: 60vh;
+        }
+        .page6{
+            min-height: 40vh;
+        }
+        .page7{
+            height: 50vh;
+            margin-top: 10vw;
+            margin-bottom: 10vw;
+        }
+}
