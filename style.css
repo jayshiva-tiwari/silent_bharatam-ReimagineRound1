@@ -38,6 +38,7 @@ body{
 }
 #main{
     background-color:#000;
+    position: relative;
 }
 
 /* ******************page-1*********************** */
@@ -53,13 +54,19 @@ body{
 }
 
 nav{
-    /* position: fixed; */
+    position: absolute;
     top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2vw 3vw;
     mix-blend-mode: difference;
+    width: 100%;
+    z-index: 9999999;
+    position: fixed;
+    top: 0;
+    /* background-color: red; */
+    height: 7vw;
 }
 .nav-part1{
     display: flex;
@@ -86,13 +93,15 @@ nav{
 .nav-part2 p{
     color:#ffffffcd ;
     cursor: pointer;
+    mix-blend-mode: difference;
+    background-color: transparent;
 }
 .hero{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 6vw;
+    margin-top: 12vw;
     /* background-color: red; */
     line-height: 6.5vw;
     gap: 1.8vw;
@@ -180,6 +189,7 @@ nav{
     left: 50%;
     top: 50%;
     transform: translate(-50% , -50%);
+
     /* z-index: -1; */
 }
 .cir img{
@@ -402,10 +412,10 @@ nav{
 
 #page4{
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background-color: #000000;
     position: relative;
-    /* padding-top: 5vw; */
+    /* padding-top: 30vw; */
 }
 
 .cards{
@@ -413,16 +423,16 @@ nav{
     display: flex;
     justify-content: space-evenly;
     align-items: center; 
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
-    height: 80vh;
+    height: 80%;
     border-radius: 20px;
     /* padding-top: 10vw; */
     background-color: #1a1919;
-    /* padding-top: 5vw; */
+    /* padding-top: 10.5vw; */
 }
 
 .card{
@@ -432,8 +442,14 @@ nav{
     align-items: center;
     width: 30vw;
     height: 35vw;
-
+    transition: all ease-in-out 1s linear;
     /* padding-bottom: 10vw; */
+}
+.anime-card{
+    position: absolute;
+    width: 24.9vw;
+    height: 33.5vw;
+    /* background-color: red; */
 }
 .card img{
     width: 25vw;
@@ -446,6 +462,7 @@ nav{
     text-align: center;
     padding-top: -4vw;
     margin-top: 1.5vw;
+
 }
 
 .card-txt{
@@ -457,8 +474,13 @@ nav{
     margin-top: 0.7vw;
 
 }
-
+#cards1{
+    /* height: 60vh; */
+    margin-top: 10.5vw;
+}
 #cards1 .card{
+    padding-top: 10vw;
+
     padding-bottom: 10vw;
 }
 
@@ -481,11 +503,19 @@ nav{
     height: 100vh;
     position: relative;
 }
+#page4-part2 .cards{
+    height: 70%;
+    
+}
 
 #page4-part3{
     width: 100%;
     height: 100vh;
     position: relative;
+}
+#page4-part3 .cards{
+    height: 70%;
+    
 }
 
 .page5{
@@ -541,11 +571,11 @@ nav{
 }
 .block-1, .block-3{
     bottom: 0;
-    bottom: 3vw;
+    bottom: 2vw;
 }
 .block-2 , .block-4 {
     bottom: 0;
-    top: 3vw;
+    top: 2vw;
 } 
 
 .page6{
@@ -631,12 +661,13 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .page7 .link-box{
     /* background: #dca3a3;
      */
     display: flex;
-    justify-content:start;
+    justify-content:space-between;
     align-items: center;
     height: 90px;
     border-bottom: 1.5px solid #ffffffad;
@@ -644,15 +675,22 @@ nav{
     letter-spacing: 4px;
     word-spacing: 2px;
     font-size: 3vw;
-    font-weight: 200;
+    font-weight: 300;
     padding: 0vw 1vw;
-    color: #ffffff92;
+    opacity: 0.7;
+    text-transform: uppercase;
+    cursor: pointer;
     transition: all ease 1s;
 }
 .link-box1{
     border-top: 1.5px solid #ffffffac;
 }
-
+.link-anime{
+    /* background-color: red; */
+    position: absolute;
+    width: 150vw;
+    height: 8vw;
+}
 .link-box:hover{
     background-color: #000000;
 background-image: linear-gradient(11deg, #000000 0%, #4cce5d 100%);
@@ -666,17 +704,37 @@ background-color: #40af4e;
 
 @media (max-width:600px) {
     #loader{
+        height: 100vh;
+        width: 100%;
+        background-color: #101010;
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+    }
+    .load-h1{
+        display: flex;
         flex-direction: column;
-        /* display: none; */
+        /* background-color: red; */
+        gap: 1vw;
+        overflow: hidden;
+    }
+    .load-h1 span{
+        font-size: 2vw;
+        font-weight: 900;
+        display: none;
+        /* background-color: red; */
     }
     .page1{
-        min-height: 35vh;
+        min-height: 50vh;
+        /* padding-bottom: 23vw; */
     }
     nav{
         padding:0 9vw;
+        padding-top:10vw;
     }
     .nav-part1{
-
+        padding-left: 5vw;
         width: 10vw;
     }
     .nav-part2{
@@ -696,19 +754,86 @@ background-color: #40af4e;
         font-size: 3vw;
         height: 4vw;
     }
+    .hero{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 79vw;
+    line-height: 4vw;
+    gap: 1.8vw;
+    z-index: 9999;
+    }
+    #hero-1{
+        font-size: 5vw;
+    }
+    #hero-2{
+        font-size: 4vw;
+    }
+    #hero-3{
+        font-size: 4vw;
+    }
     .page2{
         min-height: 40vh;
         margin-top: 0vw;
+        padding-top: 10vw;
+    }
+    #strip{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 200%;
+        height: 20%;
+        border-top: 1.5px solid #505050;
+        border-bottom: 1.5px solid #505050;
+        background-color: #000000;
+        /* padding-top: 10vw; */
+        animation: strip-anime 10s infinite linear;
     }
     .content-2{
-        height: 40vh;
+        height: 30vh;
+    }
+    .flx-btn{
+        padding-top: 49vw;
     }
     .btn{
-        width: 19vw;
-    height: 6vw;
+        width: 25vw;
+    height: 9vw;
     }
     .page3{
         height: 40vw;
+    }
+    .page3 .video-container{
+        width: 85vw;
+        height: 20vh;
+        position: relative;
+        /* background-color: #fff; */
+        left: 50%;
+        /* margin-top: 30vw; */
+        top: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+    .video-container video{
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        /* margin-top: 21vw; */
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+    }
+    .video-container .play{
+        padding: 4.5vw 4vw;
+        background-color: #000;
+        position: fixed;
+        background-color: #000000;
+        border-radius: 50%;
+        font-size: 1.2vw;
+        font-weight: 500;
+        z-index: 9999;
+        opacity: 0;
+        scale: 0;
     }
     .cards{
         flex-direction: column;
@@ -716,6 +841,11 @@ background-color: #40af4e;
     .card{
         height: 80vw;
         padding-top: 2vw;
+    }
+    .anime-card{
+        position: absolute;
+        width: 70vw;
+        height: 78vw;
     }
     .card img{
         width: 70vw;
@@ -745,5 +875,84 @@ background-color: #40af4e;
             height: 50vh;
             margin-top: 10vw;
             margin-bottom: 10vw;
+        }
+        #page4-part2{
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+        #page4-part2 .cards{
+            height: 80%;
+            
+        }
+        .card a{
+            /* width: 19vw; */
+            margin-top: 1.5vw;
+        
+        }
+        #page4-part3{
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+        #page4-part3 .cards{
+            height: 80%;
+        }
+        .card p{
+            padding-left: 6vw;
+        }
+        .left-shoe{
+            display: unset;
+            gap: 5vw;
+            padding-left: 0vw;
+        }
+        .right-shoe{
+            display: unset;
+            gap: 5vw;
+            
+            padding-right:0vw;
+        }
+        .shoes{
+            width: 65vw;
+            height: 52vw;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5vw;
+            background-color: #4a4a4a;
+            background-image: linear-gradient(180deg, #4a4a4a 0%, #080808 100%);
+        
+            box-shadow: 1px 1px 100px -41px rgba(255,255,255,0.35);
+            -webkit-box-shadow: 1px 1px 100px -41px rgba(255,255,255,0.35);
+            -moz-box-shadow: 1px 1px 100px -41px rgba(255,255,255,0.35);
+        
+            transform-style: preserve-3d;
+            cursor: pointer;
+            
+        }
+        .shoes-h1 h1{
+            text-align: center;
+            width: 90vw;
+            font-size: 9vw;
+            text-transform: uppercase;
+            line-height: 8vw;
+            margin-bottom: 2vw;
+        }
+        .shoes img{
+            width: 59vw;
+            padding-bottom: 15vw;
+            transform: translateZ(50px);
+        }
+        .shoes p{
+            padding-bottom: 3.3vw;
+            font-size: 5.5vw;
+            font-weight: 600;
+        }
+        .link-anime{
+            position: absolute;
+            width: 150vw;
+            height: 15vw;
         }
 }
