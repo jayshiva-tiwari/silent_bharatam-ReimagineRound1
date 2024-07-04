@@ -807,6 +807,15 @@ background-color: #40af4e;
         /* padding-top: 10vw; */
         animation: strip-anime 10s infinite linear;
     }
+    #strip img{
+    width: 29vw;
+    opacity: 0.5;
+
+    object-fit: cover;
+}
+#strip .strip-img{
+    width: 30.4vw;
+}
     .text-area{
         position: absolute;
         opacity: .5;
