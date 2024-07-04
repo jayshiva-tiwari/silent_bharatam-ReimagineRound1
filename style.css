@@ -835,6 +835,9 @@ background-color: #40af4e;
         opacity: 0;
         scale: 0;
     }
+    .play{
+        display: none;
+    }
     .cards{
         flex-direction: column;
     }
