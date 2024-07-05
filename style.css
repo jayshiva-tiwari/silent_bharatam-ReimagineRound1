@@ -743,8 +743,8 @@ background-color: #40af4e;
     .nav-part2{
         display: none;
     }
-    .nav-part1 .icon{
-        font-size: 4.5vw;
+    .nav-part1 p{
+        font-size: 4.3vw;
     }
     .nav-part1 img{
         width: 14vw;
