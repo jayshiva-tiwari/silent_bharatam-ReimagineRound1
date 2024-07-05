@@ -83,7 +83,7 @@ function textAnimation() {
 }
 
 function magnet() {
-    Shery.makeMagnet(".nav-part1 i ,.nav-part2 p, .btn", {
+    Shery.makeMagnet(".nav-part1 p ,.nav-part2 p, .btn", {
         ease: "cubic-bezier(0.23, 1, 0.320, 1)",
         duration: 1,
     });    
