@@ -74,10 +74,11 @@ nav{
     align-items: center;
     gap: 2vw;
 }
-.nav-part1 .icon {
-    font-size: 1.7vw;
-    opacity: 0.7;
+.nav-part1 p {
+    font-size: 1.5vw;
     cursor: pointer;
+    color: #adadad;
+    font-weight: 200;
 }
 .nav-part1 img{
     width: 6.5vw;
@@ -88,13 +89,14 @@ nav{
     justify-content: center;
     align-items: center;
     gap: 2vw;
-    font-weight: 600;
+    font-weight: 300;
 }
 .nav-part2 p{
-    color:#ffffffcd ;
     cursor: pointer;
     mix-blend-mode: difference;
     background-color: transparent;
+    color: #adadad;
+    text-transform: capitalize;
 }
 .hero{
     display: flex;
@@ -163,12 +165,12 @@ nav{
 }
 .search i{
     font-size: 1.3vw;
-    opacity: 0.6;
+    opacity: 0.4;
 }
 .search input{
     border:none;
     font-size: 1.7vw;
-    font-weight: 600;
+    font-weight: 300;
     height: 1.5vw;
     color: #9d9d9d;
     background-color: transparent;
@@ -551,7 +553,7 @@ nav{
     text-align: center;
     text-transform: capitalize;
     transition: all ease 0.5s;
-    
+    color: #bbb9b9;
 }
 .block h1:hover{
     -webkit-text-stroke: 1.5px #ffffff;
@@ -638,6 +640,7 @@ nav{
     font-size: 4vw;
     text-transform: uppercase;
     line-height: 4vw;
+    color: #9d9d9d;
 }
 .shoes img{
     width: 19vw;
@@ -670,12 +673,12 @@ nav{
     justify-content:space-between;
     align-items: center;
     height: 90px;
-    border-bottom: 1.5px solid #ffffffad;
+    border-bottom: 1.5px solid #c1c1c170;
     width: 80%;
     letter-spacing: 4px;
     word-spacing: 2px;
     font-size: 3vw;
-    font-weight: 300;
+    font-weight: 200;
     padding: 0vw 1vw;
     opacity: 0.7;
     text-transform: uppercase;
@@ -683,7 +686,7 @@ nav{
     transition: all ease 1s;
 }
 .link-box1{
-    border-top: 1.5px solid #ffffffac;
+    border-top: 1.5px solid #c1c1c170;
 }
 .link-anime{
     /* background-color: red; */
@@ -734,7 +737,7 @@ background-color: #40af4e;
         padding-top:10vw;
     }
     .nav-part1{
-        padding-left: 5vw;
+        padding-left: 13vw;
         width: 10vw;
     }
     .nav-part2{
@@ -750,9 +753,9 @@ background-color: #40af4e;
         font-size: 4vw;
     }
     .search input{
-        width: 12vw;
-        font-size: 3vw;
-        height: 4vw;
+        width: 17vw;
+        font-size: 4.5vw;
+        height: 4.9vw;
     }
     .hero{
         display: flex;
@@ -818,7 +821,7 @@ background-color: #40af4e;
 }
     .text-area{
         position: absolute;
-        opacity: .5;
+        opacity: 1;
         left: 5%;
         width: 100%;
         font-weight: 800;
