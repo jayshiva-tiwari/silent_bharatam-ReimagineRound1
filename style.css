@@ -98,6 +98,10 @@ nav{
     color: #adadad;
     text-transform: capitalize;
 }
+.nav-part2 p:nth-child(1){
+    font-weight: 600;
+    color: #40af4e;
+}
 .hero{
     display: flex;
     flex-direction: column;
@@ -160,7 +164,7 @@ nav{
     /* align-items:last baseline; */
     /* padding: 3vw 0; */
     gap: 0.2vw;
-    padding-left: vw;
+    padding-left: 6vw;
     /* color: #fff; */
 }
 .search i{
